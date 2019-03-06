@@ -1,16 +1,19 @@
-dark-colour = #333
-light-colour = #fff
-primary-colour = #c33
-highlight-colour = #f33
+col-light = #fff
+col-light-mid = #eee
+col-mid = #ccc
+col-mid-dark = #888
+col-dark = #444
+col-primary = #c44
+col-primary-focus = #e66
 
 *
   box-sizing: border-box
 
 :root
-  font-family: "Lucida Console", monospace
+  font-family: "Source Code Pro", monospace
   font-size: 16px
-  background: dark-colour url("../assets/simple-bg.png")
-  color: dark-colour
+  background: col-dark url("../assets/simple-bg.png")
+  color: col-dark
 
 html
 body
@@ -20,11 +23,11 @@ body
   height: 100%
 
 a
-  color: primary-colour
+  color: col-primary
   text-decoration: none
   
   &:hover
-    color: highlight-colour
+    color: col-primary-focus
 
 table
   width: 100%
@@ -32,23 +35,22 @@ table
   
   td
   th
-    border: 1px solid dark-colour
+    border: 1px solid col-dark
   
 #app
   display: flex
   flex-direction: column
   width: 100%
   height: 100%
-  max-width: 50em
   margin: 0 auto
-  background: light-colour
+  background: col-light
 
 #app > header
 #app > footer
   flex: 0 0 auto
   padding: 1em
-  background: primary-colour
-  color: light-colour
+  background: col-primary
+  color: col-light
   
   h1
     margin: 0
@@ -57,4 +59,16 @@ table
 #app > main
   flex: 1 1 auto
   padding: 1em
-  background: light-colour
+  background: col-light
+  
+  section
+    div.sub-section
+      margin: 0.5em 0
+
+  .button
+    min-width: 16em
+    padding: 1em 2em
+    background: col-light-mid
+  
+  .bold
+    font-weight: bold

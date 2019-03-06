@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <title>CSS Animation Experiment</title>
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
 <link href="./app/main.css" rel="stylesheet">
+<link href="./lib/hover.css" rel="stylesheet">
 <script src="./app/main.js"></script>
 </head>
 <body>
@@ -12,25 +14,34 @@
   <h1>CSS Animation Experiment</h1>
 </header>
 <main>
-  <output id="console"></output>
-  <table>
-    <tr>
-      <th>Fruit</th>
-      <th>Colour</th>
-    </tr>
-    <tr>
-      <td><a href="#">Apple</a></td>
-      <td>Red, Green</td>
-    </tr>
-    <tr>
-      <td><a href="#">Banana</a></td>
-      <td>Yellow, Green</td>
-    </tr>
-    <tr>
-      <td><a href="#">Cherry</a></td>
-      <td>Red</td>
-    </tr>
-  </table>
+  <section>
+    <h2>Hover.css</h2>
+    <div class="sub-section">
+      <button class="button">Baseline</button>
+      <button class="button hvr-bounce-to-right">Bounce To Right</button>
+      <button class="button hvr-grow-shadow">Grow Shadow</button>
+      <button class="button hvr-float-shadow">Float Shadow</button>
+    </div>
+    <div class="sub-section">
+      <button class="button hvr-bounce-to-right hvr-grow-shadow">Grow + Bounce</button>
+      <button class="button hvr-bounce-to-right hvr-float-shadow">Grow + Float</button>
+    </div>
+    <div class="sub-section">
+      <h3>Notes</h3>
+      <ul>
+        <li>Hover.css is pretty easy to plug in, but some theme styles are built-in - e.g. Bounce To Right always uses its own blue colour highlight by default. I have to see where this is specified and how to customise it.</li>
+        <li>This library is great for study and/or reverse-engineering the raw CSS mechanisms.</li>
+        <li>We can combine Hover.css classes for fun and profit, but not all combinations work out of the box. (c.f. Grow+Bounce vs Grow+Float)</li>
+      </ul>
+    </div>
+  </section>
+  <section>
+    <h2>Resources</h2>
+    <ul>
+      <li><a class="bold" href="http://ianlunn.github.io/Hover/">Hover.css</a> - animated styles for hover interactions.</li>
+      <li><a class="bold" href="https://popmotion.io/pose/">Pose</a> - animation framework for React.</li>
+    </ul>
+  </section>
 </main>
 <footer>2019</footer>
 </div><!--/#app-->
