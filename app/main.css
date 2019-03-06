@@ -54,6 +54,9 @@ table th {
   padding: 1em;
   background: #fff;
 }
+#app > main section div.sub-section {
+  margin: 0.5em 0;
+}
 #app > main .button {
   min-width: 16em;
   padding: 1em 2em;
