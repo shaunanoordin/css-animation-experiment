@@ -2,10 +2,10 @@
   box-sizing: border-box;
 }
 :root {
-  font-family: "Lucida Console", monospace;
+  font-family: "Source Code Pro", monospace;
   font-size: 16px;
-  background: #333 url("../assets/simple-bg.png");
-  color: #333;
+  background: #444 url("../assets/simple-bg.png");
+  color: #444;
 }
 html,
 body {
@@ -15,11 +15,11 @@ body {
   height: 100%;
 }
 a {
-  color: #c33;
+  color: #c44;
   text-decoration: none;
 }
 a:hover {
-  color: #f33;
+  color: #e66;
 }
 table {
   width: 100%;
@@ -27,7 +27,7 @@ table {
 }
 table td,
 table th {
-  border: 1px solid #333;
+  border: 1px solid #444;
 }
 #app {
   display: flex;
@@ -41,7 +41,7 @@ table th {
 #app > footer {
   flex: 0 0 auto;
   padding: 1em;
-  background: #c33;
+  background: #c44;
   color: #fff;
 }
 #app > header h1,
@@ -53,4 +53,12 @@ table th {
   flex: 1 1 auto;
   padding: 1em;
   background: #fff;
+}
+#app > main .button {
+  min-width: 16em;
+  padding: 1em 2em;
+  background: #eee;
+}
+#app > main .bold {
+  font-weight: bold;
 }

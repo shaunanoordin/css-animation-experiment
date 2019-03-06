@@ -6,7 +6,6 @@
     "url": "https://github.com/shaunanoordin/css-animation-experiment/"
   },
   "homepage": "https://github.com/shaunanoordin/css-animation-experiment/",
-  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.3.3",
     "@babel/preset-env": "^7.3.1",
